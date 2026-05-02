@@ -189,3 +189,4 @@ Email: percilianocaio@gmail.com
 ## Observações
 
 Este projeto foi desenvolvido com foco em portfólio, simulando um cenário real de dashboard analítico com dados dinâmicos e arquitetura fullstack.
+# energy-dashboard
