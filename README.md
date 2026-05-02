@@ -182,8 +182,8 @@ Start: node server.js
 
 **Caio Perciliano**
 
-GitHub: https://github.com/seu-usuario
-Email: percilianocaio@gmail.com
+🔗 GitHub: https://github.com/seu-usuario
+🔗 Email: percilianocaio@gmail.com
 ---
 
 ## Observações
