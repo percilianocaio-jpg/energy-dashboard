@@ -1,4 +1,26 @@
-# Logs
+# =========================
+# DEPENDÊNCIAS
+# =========================
+node_modules
+
+# =========================
+# BUILD
+# =========================
+dist
+dist-ssr
+build
+
+# =========================
+# VARIÁVEIS DE AMBIENTE
+# =========================
+.env
+.env.local
+.env.development
+.env.production
+
+# =========================
+# LOGS
+# =========================
 logs
 *.log
 npm-debug.log*
@@ -7,23 +29,26 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# =========================
+# CACHE / TEMP
+# =========================
+.cache
+.tmp
+coverage
 
-# Editor directories and files
+# =========================
+# EDITORES
+# =========================
 .vscode/*
 !.vscode/extensions.json
 .idea
 .DS_Store
+
+# VS / Windows lixo
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
-*.sw?
 
-# Variáveis de ambiente
-.env
-.env.local
-.env.production
+# Swap files
+*.sw?
