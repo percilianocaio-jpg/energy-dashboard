@@ -13,7 +13,9 @@ Dashboard interativo para análise de consumo energético por empresa, com visua
 
 ## Preview
 
-![Preview do dashboard](./preview.gif)
+![Dashboard](./src/assets/Dashboard.png)
+![Empresa Selecionada](./src/assets/EmpresaSelecionada.png)
+![Busca Usuário](./src/assets/BuscaUsuário.png)
 
 ---
 
@@ -116,7 +118,7 @@ energy-dashboard/
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/energy-dashboard.git
+git clone https://github.com/percilianocaio-jpg/energy-dashboard.git
 cd energy-dashboard
 ```
 
@@ -180,11 +182,11 @@ Start: node server.js
 
 **Caio Perciliano**
 
-🔗 LinkedIn: https://linkedin.com/in/seu-perfil
-🔗 GitHub: https://github.com/seu-usuario
-
+GitHub: https://github.com/seu-usuario
+Email: percilianocaio@gmail.com
 ---
 
 ## Observações
 
 Este projeto foi desenvolvido com foco em portfólio, simulando um cenário real de dashboard analítico com dados dinâmicos e arquitetura fullstack.
+# energy-dashboard
