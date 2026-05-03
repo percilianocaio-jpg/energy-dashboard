@@ -6,7 +6,7 @@ Dashboard interativo para análise de consumo energético por empresa, com visua
 
 ## Live Demo
 
-🔗 https://seu-dashboard.vercel.app
+🔗 (https://energy-dashboard-nine-gamma.vercel.app/)
 🔗 (https://energy-dashboard-mod3.onrender.com/)
 
 ---
