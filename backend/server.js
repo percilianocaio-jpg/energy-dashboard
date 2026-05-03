@@ -43,10 +43,6 @@ app.use((req, res, next) => {
    🌍 CORS
 ========================= */
 
-const allowedOrigins = process.env.FRONT_URL?.split(",") || []
-
-const allowedOrigins = process.env.FRONT_URL?.split(",") || []
-
 app.use(cors())
 
 /* =========================
