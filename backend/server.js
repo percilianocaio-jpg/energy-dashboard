@@ -47,25 +47,7 @@ const allowedOrigins = process.env.FRONT_URL?.split(",") || []
 
 const allowedOrigins = process.env.FRONT_URL?.split(",") || []
 
-app.use(
-  cors({
-    origin: function (origin, callback) {
-      if (!origin) return callback(null, true)
-
-      // Permite qualquer subdomínio da Vercel + origens configuradas
-      const isVercel = origin.endsWith(".vercel.app")
-      const isAllowed = allowedOrigins.includes(origin)
-
-      if (isVercel || isAllowed) {
-        callback(null, true)
-      } else {
-        callback(new Error("Not allowed by CORS"))
-      }
-    },
-  })
-)
-
-app.use(express.json())
+app.use(cors())
 
 /* =========================
    🔥 DADOS BASE
