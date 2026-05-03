@@ -45,12 +45,18 @@ app.use((req, res, next) => {
 
 const allowedOrigins = process.env.FRONT_URL?.split(",") || []
 
+const allowedOrigins = process.env.FRONT_URL?.split(",") || []
+
 app.use(
   cors({
     origin: function (origin, callback) {
       if (!origin) return callback(null, true)
 
-      if (allowedOrigins.includes(origin)) {
+      // Permite qualquer subdomínio da Vercel + origens configuradas
+      const isVercel = origin.endsWith(".vercel.app")
+      const isAllowed = allowedOrigins.includes(origin)
+
+      if (isVercel || isAllowed) {
         callback(null, true)
       } else {
         callback(new Error("Not allowed by CORS"))
