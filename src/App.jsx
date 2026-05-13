@@ -13,6 +13,7 @@ import useUsers from "./hooks/useUsers";
 import UserAccordion from "./components/UserAccordion";
 import SearchBar from "./components/SearchBar";
 import CompanyChart from "./components/CompanyChart";
+import SplashScreen from "./components/SplashScreen";
 
 const METRICAS = [
   {
@@ -129,6 +130,20 @@ function App() {
 
   const totalUsuarios = insights?.totalUsuarios || 0;
   const totalEmpresas = empresas?.length || 0;
+
+  const [minimumLoading, setMinimumLoading] = useState(true);
+
+useEffect(() => {
+  const timer = setTimeout(() => {
+    setMinimumLoading(false);
+  }, 1800);
+
+  return () => clearTimeout(timer);
+}, []);
+
+if (loading || minimumLoading) {
+  return <SplashScreen />;
+}
 
   return (
     <div className="app-layout">
